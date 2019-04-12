@@ -1,0 +1,325 @@
+@font-face {
+  font-family: Avenir;
+  src: url("./Images/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("./Images/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("./Images/Linotype - AvenirNextLTPro-Demi.otf");
+}
+
+.perform, .phrase h2 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.footer .myfeet--images, .footer .thick, .footer .slim, .footer .slim--copyright {
+  margin: 1em 0em;
+}
+
+body {
+  font-family: Avenir;
+  margin: 0px;
+}
+
+/**
+* HEADER CSS
+*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #323232;
+  min-height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header--logo {
+  text-align: center;
+  width: 100%;
+}
+
+header .header--logo img {
+  height: 8vw;
+}
+
+header .header--right {
+  font-size: 2vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .sub-menu {
+  padding: 1rem;
+  font-size: 5vw;
+  width: 50%;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header .sub-menu:hover {
+  border-bottom: solid #ffffff;
+}
+
+.hero {
+  width: 100%;
+  height: 48vw;
+  background-image: url(Images/concert.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero h1 {
+  color: white;
+}
+
+h1 {
+  font-family: mybold;
+  margin-top: 0;
+  margin: 0px 16px 24px 16px;
+}
+
+.about {
+  margin-top: 32px;
+}
+
+.perform .perform__img {
+  width: 100%;
+}
+
+.phrase h2 {
+  font-family: myDemi;
+}
+
+.phrase .phrase--one {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.phrase .phrase--two {
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.phrase .phrase--three {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.phrase .phrase--four {
+  margin: 24px 16px 40px 16px;
+}
+
+.phrase .phrase--four h4 {
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+.gallery {
+  background-color: #fafafa;
+  padding-top: 32px;
+}
+
+.gallery .gallery--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 0px 0px;
+  margin: 16px 16px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+  padding: 2.5em 0em;
+}
+
+.footer .myfeet--images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 8px;
+}
+
+.footer .myfeet--images img {
+  padding: 0px 16px;
+}
+
+.footer .footer--text {
+  margin: 32px 16px 24px 16px;
+}
+
+.footer .thick {
+  font-family: myDemi;
+}
+
+.footer .slim--copyright {
+  margin: 32px 16px 24px 16px;
+  width: 69%;
+}
+
+/** in the tablet **/
+@media screen and (max-width: 600px) {
+  .myfeet--logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #323232;
+    min-height: 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header--logo {
+    justify-self: flex-start;
+    text-align: left;
+    padding-left: 24px;
+    width: 30%;
+  }
+  header .header--logo img {
+    height: 3.5vw;
+  }
+  header .header--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .sub-menu {
+    padding: 0;
+    font-size: 2vw;
+    width: 21%;
+    text-align: center;
+  }
+  h1 {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .perform {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .gallery .gallery--img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 12px 12px;
+  }
+  .gallery img {
+    width: 30%;
+    height: 100%;
+    margin: 12px;
+  }
+  .phrase {
+    width: 100%;
+  }
+  .phrase h2 {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .phrase .phrase--four {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 24px 12px 40px 12px;
+  }
+  .phrase .phrase--four h4 {
+    margin: 0px 12px;
+  }
+  .footer .myfeet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .footer .myfeet .myfeet--title {
+    margin: 16px 0px 16px 0px;
+  }
+  .footer .myfeet .myfeet--images {
+    padding: 0px;
+  }
+  .footer .myfeet .myfeet--logo {
+    justify-self: flex-end;
+    margin-top: 16px;
+    margin-left: auto;
+  }
+  .footer .footer--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 32px 24px 24px 24px;
+  }
+  .footer .slim--copyright {
+    margin: 32px 24px 24px 24px;
+    width: 69%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
