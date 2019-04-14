@@ -162,5 +162,9 @@ h4 {
     display: none;
   }
 }
+
+/* In the Tablet */
 @import "tablet.scss";
+
+/* In the Desktop */
 @import "desktop.scss";
