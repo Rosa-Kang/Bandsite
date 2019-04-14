@@ -1,0 +1,125 @@
+/**Tablet ---- **/
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: #323232;
+    min-height: 80px;
+    justify-content: center;
+
+    .header--logo {
+      padding: 0px 32px 8px 24px;
+      width: 30%;
+      flex-basis: 0;
+    }
+
+    .header--logo img {
+      height: 2.7vw;
+    }
+
+    .header--right {
+      display: flex;
+    }
+
+    .sub-menu {
+      padding: 1.4em 0em;
+      margin-left: 2em;
+      margin-right: 1em;
+      flex-basis: 0;
+      font-size: 2vw;
+    }
+  }
+
+  h1 {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .perform {
+    margin-left: 24px;
+    margin-right: 24px;
+
+    .perform__img {
+      width: 100%;
+      height: 47.2vw;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .phrase {
+    width: 100%;
+
+    .phrase--two {
+      font-family: myTB;
+    }
+
+    h2 {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    .phrase--four {
+      display: flex;
+      flex-direction: row;
+      margin: 24px 12px 40px 12px;
+
+      h4 {
+        margin: 0px 12px;
+      }
+    }
+  }
+
+  .gallery {
+    .gallery--img {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 36px 24px 8px 24px;
+    }
+    img {
+      width: 31.2%;
+      height: 100%;
+      margin-bottom: 24px;
+    }
+  }
+
+  .footer {
+    .myfeet {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 24px;
+      margin-right: 24px;
+
+      .myfeet--title {
+        margin: 8px 0px 8px 0px;
+        font-size: 36px;
+      }
+
+      .myfeet--images {
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 124px;
+        margin: 8px 0px 8px 68px;
+      }
+
+      .myfeet--logo {
+        justify-self: flex-end;
+        margin-top: 16px;
+        margin-left: auto;
+      }
+    }
+    .footer--text {
+      display: flex;
+      justify-content: space-between;
+      margin: 24px;
+    }
+    .slim--copyright {
+      margin: 24px;
+      width: 69%;
+    }
+  }
+}

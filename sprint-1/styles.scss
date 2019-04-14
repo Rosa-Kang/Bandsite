@@ -1,40 +1,6 @@
-@font-face {
-  font-family: Avenir;
-  src: url("./Images/Linotype\ -\ AvenirNextLTPro-Regular.otf");
-}
+@import "basicStyle";
 
-@font-face {
-  font-family: myBold;
-  src: url("./Images/Linotype\ -\ AvenirNextLTPro-Bold.otf");
-}
-
-@font-face {
-  font-family: myDemi;
-  src: url("./Images/Linotype\ -\ AvenirNextLTPro-Demi.otf");
-}
-
-%leftRight {
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-%topBottom {
-  margin: 1em 0em;
-}
-
-%footerLeft {
-  margin-right: 24px;
-  margin-left: 24px;
-}
-
-body {
-  font-family: Avenir;
-  margin: 0px;
-}
-
-/**
-* HEADER CSS
-*/
+/* MOBILE ---------------- ------------ MOBILE MOBILE MOBILE */
 header {
   display: flex;
   flex-direction: column;
@@ -72,12 +38,13 @@ header {
 
   .sub-menu:hover {
     border-bottom: solid #ffffff;
+    font-family: myDemi;
   }
 }
 
 .hero {
   width: 100%;
-  height: 48vw;
+  height: 47vw;
   background-image: url(Images/concert.jpg);
   background-position: center;
   background-size: cover;
@@ -91,12 +58,7 @@ header {
 
 h1 {
   font-family: mybold;
-  margin-top: 0;
-  margin: 0px 16px 24px 16px;
-}
-
-.about {
-  margin-top: 32px;
+  margin: 32px 16px 24px 16px;
 }
 
 .perform {
@@ -114,7 +76,7 @@ h1 {
   }
   .phrase--one {
     margin-top: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .phrase--two {
@@ -128,23 +90,28 @@ h1 {
   }
 
   .phrase--four {
-    margin: 24px 16px 40px 16px;
-
-    h4 {
-      margin-top: 24px;
-      margin-bottom: 0px;
-    }
+    margin: 24px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+}
+
+h4 {
+  margin: 0px 0px 24px 0px;
 }
 
 .gallery {
   background-color: #fafafa;
   padding-top: 32px;
 
+  h1 {
+    margin: 0px 16px 24px 16px;
+  }
+
   .gallery--img {
     display: flex;
     flex-flow: column;
-    margin: 0px 0px;
     margin: 16px 16px;
   }
   img {
@@ -156,19 +123,23 @@ h1 {
 .footer {
   background-color: #323232;
   color: white;
-  padding: 2.5em 0em;
+  padding: 40px 0px;
+
+  .myfeet--title {
+    margin: 0px 16px 24px 12px;
+  }
 
   .myfeet--images {
-    @extend %topBottom;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    margin-left: 8px;
-  }
-  .myfeet--images img {
-    padding: 0px 16px;
+    margin: 16px;
+    justify-content: space-between;
+    width: 30%;
   }
 
   .footer--text {
-    margin: 32px 16px 24px 16px;
+    margin: 32px 16px 24px 12px;
   }
   .thick {
     font-family: myDemi;
@@ -181,122 +152,15 @@ h1 {
 
   .slim--copyright {
     @extend %topBottom;
-    margin: 32px 16px 24px 16px;
-    width: 69%;
+    margin: 32px 16px 24px 12px;
+    width: 67%;
   }
 }
 
-/** in the tablet **/
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .myfeet--logo {
     display: none;
   }
 }
-
-@media screen and (min-width: 601px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    background-color: #323232;
-    min-height: 80px;
-    justify-content: center;
-
-    .header--logo {
-      justify-self: flex-start;
-      text-align: left;
-      padding-left: 24px;
-      width: 30%;
-    }
-
-    .header--logo img {
-      height: 3.5vw;
-    }
-
-    .header--right {
-      display: flex;
-    }
-
-    .sub-menu {
-      padding: 0;
-      font-size: 2vw;
-      width: 21%;
-      text-align: center;
-    }
-  }
-
-  h1 {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .perform {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-  .gallery {
-    .gallery--img {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin: 12px 12px;
-    }
-    img {
-      width: 30%;
-      height: 100%;
-      margin: 12px;
-    }
-  }
-
-  .phrase {
-    width: 100%;
-
-    h2 {
-      margin-left: 24px;
-      margin-right: 24px;
-    }
-    .phrase--four {
-      display: flex;
-      flex-direction: row;
-      margin: 24px 12px 40px 12px;
-
-      h4 {
-        margin: 0px 12px;
-      }
-    }
-  }
-
-  .footer {
-    .myfeet {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-left: 24px;
-      margin-right: 24px;
-
-      .myfeet--title {
-        margin: 16px 0px 16px 0px;
-      }
-
-      .myfeet--images {
-        padding: 0px;
-      }
-
-      .myfeet--logo {
-        justify-self: flex-end;
-        margin-top: 16px;
-        margin-left: auto;
-      }
-    }
-    .footer--text {
-      display: flex;
-      justify-content: space-between;
-      margin: 32px 24px 24px 24px;
-    }
-    .slim--copyright {
-      margin: 32px 24px 24px 24px;
-      width: 69%;
-    }
-  }
-}
+@import "tablet.scss";
+@import "desktop.scss";

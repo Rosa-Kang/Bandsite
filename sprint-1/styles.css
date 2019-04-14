@@ -1,6 +1,6 @@
 @font-face {
   font-family: Avenir;
-  src: url("./Images/Linotype - AvenirNextLTPro-Regular.otf");
+  src: url("./Images/Linotype - AvenirNextLTPro-UltLt.otf");
 }
 
 @font-face {
@@ -10,7 +10,12 @@
 
 @font-face {
   font-family: myDemi;
-  src: url("./Images/Linotype - AvenirNextLTPro-Demi.otf");
+  src: url("./Images/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myTB;
+  src: url("./Images/Linotype - AvenirNextLTPro-Regular.otf");
 }
 
 .perform, .phrase h2 {
@@ -18,7 +23,7 @@
   margin-right: 16px;
 }
 
-.footer .myfeet--images, .footer .thick, .footer .slim, .footer .slim--copyright {
+.footer .thick, .footer .slim, .footer .slim--copyright {
   margin: 1em 0em;
 }
 
@@ -27,9 +32,7 @@ body {
   margin: 0px;
 }
 
-/**
-* HEADER CSS
-*/
+/* MOBILE ---------------- ------------ MOBILE MOBILE MOBILE */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,11 +82,12 @@ header a {
 
 header .sub-menu:hover {
   border-bottom: solid #ffffff;
+  font-family: myDemi;
 }
 
 .hero {
   width: 100%;
-  height: 48vw;
+  height: 47vw;
   background-image: url(Images/concert.jpg);
   background-position: center;
   background-size: cover;
@@ -101,12 +105,7 @@ header .sub-menu:hover {
 
 h1 {
   font-family: mybold;
-  margin-top: 0;
-  margin: 0px 16px 24px 16px;
-}
-
-.about {
-  margin-top: 32px;
+  margin: 32px 16px 24px 16px;
 }
 
 .perform .perform__img {
@@ -119,7 +118,7 @@ h1 {
 
 .phrase .phrase--one {
   margin-top: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .phrase .phrase--two {
@@ -133,17 +132,30 @@ h1 {
 }
 
 .phrase .phrase--four {
-  margin: 24px 16px 40px 16px;
+  margin: 24px 16px 16px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.phrase .phrase--four h4 {
-  margin-top: 24px;
-  margin-bottom: 0px;
+h4 {
+  margin: 0px 0px 24px 0px;
 }
 
 .gallery {
   background-color: #fafafa;
   padding-top: 32px;
+}
+
+.gallery h1 {
+  margin: 0px 16px 24px 16px;
 }
 
 .gallery .gallery--img {
@@ -154,7 +166,6 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  margin: 0px 0px;
   margin: 16px 16px;
 }
 
@@ -166,22 +177,26 @@ h1 {
 .footer {
   background-color: #323232;
   color: white;
-  padding: 2.5em 0em;
+  padding: 40px 0px;
+}
+
+.footer .myfeet--title {
+  margin: 0px 16px 24px 12px;
 }
 
 .footer .myfeet--images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 8px;
-}
-
-.footer .myfeet--images img {
-  padding: 0px 16px;
+  margin: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
 }
 
 .footer .footer--text {
-  margin: 32px 16px 24px 16px;
+  margin: 32px 16px 24px 12px;
 }
 
 .footer .thick {
@@ -189,18 +204,18 @@ h1 {
 }
 
 .footer .slim--copyright {
-  margin: 32px 16px 24px 16px;
-  width: 69%;
+  margin: 32px 16px 24px 12px;
+  width: 67%;
 }
 
-/** in the tablet **/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .myfeet--logo {
     display: none;
   }
 }
 
-@media screen and (min-width: 601px) {
+/**Tablet ---- **/
+@media screen and (min-width: 768px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,13 +231,13 @@ h1 {
             justify-content: center;
   }
   header .header--logo {
-    justify-self: flex-start;
-    text-align: left;
-    padding-left: 24px;
+    padding: 0px 32px 8px 24px;
     width: 30%;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
   }
   header .header--logo img {
-    height: 3.5vw;
+    height: 2.7vw;
   }
   header .header--right {
     display: -webkit-box;
@@ -230,10 +245,12 @@ h1 {
     display: flex;
   }
   header .sub-menu {
-    padding: 0;
+    padding: 1.4em 0em;
+    margin-left: 2em;
+    margin-right: 1em;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
     font-size: 2vw;
-    width: 21%;
-    text-align: center;
   }
   h1 {
     margin-left: 24px;
@@ -243,28 +260,19 @@ h1 {
     margin-left: 24px;
     margin-right: 24px;
   }
-  .gallery .gallery--img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 12px 12px;
-  }
-  .gallery img {
-    width: 30%;
-    height: 100%;
-    margin: 12px;
+  .perform .perform__img {
+    width: 100%;
+    height: 47.2vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
   }
   .phrase {
     width: 100%;
+  }
+  .phrase .phrase--two {
+    font-family: myTB;
   }
   .phrase h2 {
     margin-left: 24px;
@@ -283,6 +291,26 @@ h1 {
   .phrase .phrase--four h4 {
     margin: 0px 12px;
   }
+  .gallery .gallery--img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 36px 24px 8px 24px;
+  }
+  .gallery img {
+    width: 31.2%;
+    height: 100%;
+    margin-bottom: 24px;
+  }
   .footer .myfeet {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -298,10 +326,19 @@ h1 {
     margin-right: 24px;
   }
   .footer .myfeet .myfeet--title {
-    margin: 16px 0px 16px 0px;
+    margin: 8px 0px 8px 0px;
+    font-size: 36px;
   }
   .footer .myfeet .myfeet--images {
     padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 124px;
+    margin: 8px 0px 8px 68px;
   }
   .footer .myfeet .myfeet--logo {
     justify-self: flex-end;
@@ -315,10 +352,210 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 32px 24px 24px 24px;
+    margin: 24px;
   }
   .footer .slim--copyright {
-    margin: 32px 24px 24px 24px;
+    margin: 24px;
+    width: 69%;
+  }
+}
+
+/** desktop **/
+/** desktop **/
+/** desktop **/
+/** desktop **/
+/** desktop **/
+@media screen and (min-width: 1280px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #323232;
+    min-height: 80px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header--logo {
+    padding: 0px 56px 0px 180px;
+  }
+  header .header--logo img {
+    height: 2.5vw;
+  }
+  header .header--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .sub-menu {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    font-size: 1.3vw;
+    width: 80px;
+    text-align: center;
+    margin-right: 0px 56px 0px 0px;
+  }
+  h1 {
+    margin: 48px 180px;
+  }
+  .hero h1 {
+    font-size: 60px;
+  }
+  .Main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .Main .perform {
+    padding: 0px 68px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .Main .perform .perform__img {
+    width: 100%;
+    height: 31.5vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: bottom;
+  }
+  .phrase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+    width: 100%;
+  }
+  .phrase h2 {
+    margin-left: 92px;
+    margin-right: 92px;
+  }
+  .phrase .phrase--one {
+    margin-top: 48px;
+    margin-bottom: 40px;
+  }
+  .phrase .phrase--two {
+    margin-top: 0px;
+    margin-bottom: 56px;
+  }
+  .phrase .phrase--three {
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
+  .phrase .phrase--four {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0px 72px 48px 72px;
+  }
+  .phrase .phrase--four h4 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .gallery h1 {
+    margin: 0px 180px;
+    padding: 16px 0px 24px 0px;
+  }
+  .gallery .gallery--img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 40px 180px;
+  }
+  .gallery img {
+    width: 31.8%;
+    height: 100%;
+    margin: 0px 0px 24px 0px;
+  }
+  .footer .myfeet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .footer .myfeet .myfeet--title {
+    margin: 8px 60px 8px 0px;
+    font-size: 36.5px;
+  }
+  .footer .myfeet .myfeet--images {
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 13%;
+    margin: 8px 0px 8px 0px;
+  }
+  .footer .myfeet .myfeet--images img {
+    margin-left: 16px;
+  }
+  .footer .myfeet .myfeet--logo {
+    justify-self: flex-end;
+    width: 120px;
+    margin-top: 8px;
+    margin-left: auto;
+  }
+  .footer .footer--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 55%;
+    margin: 32px 180px 24px 180px;
+  }
+  .footer .footer--text .thick {
+    margin: 16px 0px;
+  }
+  .footer .footer--text .slim {
+    margin: 16px 0px 16px 0px;
+  }
+  .footer .slim--copyright {
+    margin: 24px 0px 0px 180px;
     width: 69%;
   }
 }

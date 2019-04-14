@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Avenir;
+  src: url("./Images/Linotype - AvenirNextLTPro-UltLt.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("./Images/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("./Images/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myTB;
+  src: url("./Images/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+%leftRight {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+%topBottom {
+  margin: 1em 0em;
+}
+
+%footerLeft {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+body {
+  font-family: Avenir;
+  margin: 0px;
+}
