@@ -203,6 +203,11 @@ h4 {
   font-family: myDemi;
 }
 
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
 .footer .slim--copyright {
   margin: 32px 16px 24px 12px;
   width: 67%;

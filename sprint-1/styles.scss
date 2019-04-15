@@ -150,6 +150,11 @@ h4 {
     @extend %topBottom;
   }
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   .slim--copyright {
     @extend %topBottom;
     margin: 32px 16px 24px 12px;
