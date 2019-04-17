@@ -1,0 +1,171 @@
+/** desktop **/ /** desktop **/ /** desktop **/ /** desktop **/ /** desktop **/
+
+@media screen and (min-width: 1280px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: #323232;
+    min-height: 80px;
+    justify-content: center;
+
+    .header--logo {
+      padding: 0px 56px 0px 180px;
+    }
+
+    .header--logo img {
+      height: 2.5vw;
+    }
+
+    .header--right {
+      display: flex;
+    }
+
+    .sub-menu {
+      flex-basis: 0;
+      font-size: 1.3vw;
+      width: 80px;
+      text-align: center;
+      margin-right: 0px 56px 0px 0px;
+    }
+  }
+
+  h1 {
+    margin: 48px 180px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 180px;
+    margin-right: 180px;
+
+    .perform {
+      padding: 0px 68px;
+      margin-left: 24px;
+      margin-right: 24px;
+
+      .perform__img {
+        width: 100%;
+        height: 31.5vw;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: bottom;
+      }
+    }
+  }
+
+  .phrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+
+    h2 {
+      margin-left: 92px;
+      margin-right: 92px;
+    }
+
+    .phrase--one {
+      margin-top: 48px;
+      margin-bottom: 40px;
+    }
+
+    .phrase--two {
+      margin-top: 0px;
+      margin-bottom: 56px;
+    }
+
+    .phrase--three {
+      margin-top: 0px;
+      margin-bottom: 32px;
+    }
+
+    .phrase--four {
+      display: flex;
+      flex-direction: row;
+      margin: 0px 72px 48px 72px;
+
+      h4 {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .gallery {
+    h1 {
+      margin: 0px 180px;
+      padding: 16px 0px 24px 0px;
+    }
+    .gallery--img {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 40px 180px;
+    }
+    img {
+      width: 31.8%;
+      height: 100%;
+      margin: 0px 0px 24px 0px;
+    }
+  }
+
+  .footer {
+    .myfeet {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 180px;
+      margin-right: 180px;
+
+      .myfeet--title {
+        margin: 8px 60px 8px 0px;
+        font-size: 36.5px;
+      }
+
+      .myfeet--images {
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 13%;
+        margin: 8px 0px 8px 0px;
+
+        img {
+          margin-left: 16px;
+        }
+      }
+
+      .myfeet--logo {
+        justify-self: flex-end;
+        width: 120px;
+        margin-top: 8px;
+        margin-left: auto;
+      }
+    }
+    .footer--text {
+      display: flex;
+      justify-content: space-between;
+      width: 55%;
+      margin: 32px 180px 24px 180px;
+
+      .thick {
+        margin: 16px 0px;
+      }
+      .slim {
+        margin: 16px 0px 16px 0px;
+      }
+    }
+    .slim--copyright {
+      margin: 24px 0px 0px 180px;
+      width: 69%;
+    }
+  }
+}
