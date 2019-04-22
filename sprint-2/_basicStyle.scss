@@ -18,6 +18,21 @@
   src: url("./Images/Linotype - AvenirNextLTPro-Regular.otf");
 }
 
+@font-face {
+  font-family: myTableHead;
+  src: url("./Font/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: mySpan;
+  src: url("./Font/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myTableData;
+  src: url("./Font/Linotype - AvenirNextLTPro-Thin.otf");
+}
+
 %leftRight {
   margin-left: 16px;
   margin-right: 16px;

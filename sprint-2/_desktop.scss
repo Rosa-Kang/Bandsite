@@ -31,10 +31,11 @@
 
   h1 {
     margin: 48px 180px;
+    font-size: 40px;
   }
 
   .hero h1 {
-    font-size: 60px;
+    font-size: 70px;
   }
 
   .Main {
@@ -109,12 +110,36 @@
       justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
-      margin: 40px 180px;
+      margin: 40px 180px 0px 180px;
+
+      .gallery--img__bottom {
+        padding-bottom: 16px;
+      }
     }
     img {
       width: 31.8%;
       height: 100%;
       margin: 0px 0px 24px 0px;
+    }
+  }
+
+  .comment {
+    .comment--title {
+      margin: 0px 180px;
+      padding-top: 48px;
+      font-size: 40px;
+    }
+    .newComment {
+      margin: 56px 456px 0px 456px;
+      font-size: large;
+    }
+    #addComment {
+      margin: 0px 456px !important;
+    }
+    #addComment,
+    #existingComment {
+      margin: 0px 456px 40px 456px;
+      font-size: large;
     }
   }
 
@@ -127,16 +152,16 @@
       margin-right: 180px;
 
       .myfeet--title {
-        margin: 8px 60px 8px 0px;
-        font-size: 36.5px;
+        margin: 8px 30px 8px 0px;
+        font-size: 40px;
       }
 
       .myfeet--images {
         padding: 0px;
         display: flex;
         justify-content: space-between;
-        width: 13%;
-        margin: 8px 0px 8px 0px;
+        width: 15%;
+        margin: 8px 0px;
 
         img {
           margin-left: 16px;
@@ -153,7 +178,7 @@
     .footer--text {
       display: flex;
       justify-content: space-between;
-      width: 55%;
+      width: 52%;
       margin: 32px 180px 24px 180px;
 
       .thick {

@@ -18,13 +18,24 @@
   src: url("./Images/Linotype - AvenirNextLTPro-Regular.otf");
 }
 
+@font-face {
+  font-family: myTableHead;
+  src: url("./Font/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: mySpan;
+  src: url("./Font/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myTableData;
+  src: url("./Font/Linotype - AvenirNextLTPro-Thin.otf");
+}
+
 .perform, .phrase h2 {
   margin-left: 16px;
   margin-right: 16px;
-}
-
-.footer .thick, .footer .slim, .footer .slim--copyright {
-  margin: 1em 0em;
 }
 
 body {
@@ -88,7 +99,8 @@ header .sub-menu:hover {
 .hero {
   width: 100%;
   height: 47vw;
-  background-image: url(Images/concert.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.5))), url(Images/concert.jpg);
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(Images/concert.jpg);
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -174,19 +186,60 @@ h4 {
   margin-bottom: 16px;
 }
 
-.comment .comment--new {
-  margin: 16px;
+.comment h5 {
+  margin: 0px;
+}
+
+.comment .newComment {
+  margin: 16px 16px 0px 16px;
+  padding-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: solid 1px #e1e1e1;
 }
 
-.comment .comment--new .comment--new__sign {
+.comment .newComment .newComment--sign {
   margin: 0px 16px;
+  display: block;
+  float: right;
 }
 
-.comment .comment--new .comment--new__sign #bank {
-  border: solid 1px;
+.comment .newComment .newComment--sign label {
+  font-family: myTableHead;
+  color: #afafaf;
+  font-size: small;
+  margin-bottom: 6px;
+}
+
+.comment .newComment .newComment--sign input:focus,
+.comment .newComment .newComment--sign textarea:focus {
+  border: solid 1.5px #323232 !important;
+  outline: none;
+}
+
+.comment .newComment .newComment--sign #inputName,
+.comment .newComment .newComment--sign #inputComment {
+  padding: 0px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+  width: 222px;
+  border: solid 1px #e1e1e1;
+  border-radius: 4px;
+}
+
+.comment .newComment .newComment--sign #inputName {
+  height: 32px;
+}
+
+.comment .newComment .newComment--sign #myButton {
+  padding: 0px;
+  width: 224px;
+  height: 42px;
+  font-size: smaller;
+  background-color: #323232;
+  color: white;
+  border-radius: 4px;
 }
 
 .comment img {
@@ -197,24 +250,61 @@ h4 {
   border-radius: 50%;
 }
 
-.comment .comment--exist {
-  margin: 16px 16px 40px 16px;
+.comment #addComment {
+  margin: 0px 16px !important;
 }
 
-.comment .comment--exist .comment--current {
+.comment #addComment,
+.comment #existingComment {
+  font-size: smaller;
+  margin: 0px 16px 40px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.comment .comment--exist .comment--current--right {
-  margin: 0px 16px;
-}
-
-.comment .comment--exist .comment--current--right__statue {
+.comment #addComment .existingBox,
+.comment #existingComment .existingBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 24px 0px;
+  border-bottom: solid 1px #e1e1e1;
+}
+
+.comment #addComment .existingBox #avatar,
+.comment #existingComment .existingBox #avatar {
+  padding-right: 16px;
+}
+
+.comment #addComment .existingBox #letters,
+.comment #existingComment .existingBox #letters {
+  width: 100%;
+}
+
+.comment #addComment .existingBox #nameDate,
+.comment #existingComment .existingBox #nameDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: myDemi;
+}
+
+.comment #addComment .existingBox #date,
+.comment #existingComment .existingBox #date {
+  color: #afafaf;
+}
+
+.comment #addComment #text,
+.comment #existingComment #text {
+  margin: 16px 0px 0px 0px;
 }
 
 .footer {
@@ -224,6 +314,7 @@ h4 {
 }
 
 .footer .myfeet--title {
+  font-family: myBold;
   margin: 0px 16px 24px 12px;
 }
 
@@ -235,25 +326,32 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 30%;
+  width: 34%;
 }
 
 .footer .footer--text {
   margin: 32px 16px 24px 12px;
+  font-size: 0.9em;
 }
 
-.footer .thick {
+.footer .footer--text .thick {
   font-family: myDemi;
+  margin: 1em 0em;
 }
 
-.footer a {
-  text-decoration: none;
-  color: white;
+.footer .footer--text .slim {
+  margin: 1em 0em;
 }
 
 .footer .slim--copyright {
   margin: 32px 16px 24px 12px;
   width: 67%;
+  font-size: 0.9em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 767px) {
@@ -280,7 +378,7 @@ h4 {
             justify-content: center;
   }
   header .header--logo {
-    padding: 0px 32px 8px 24px;
+    padding: 0px 32px 0px 24px;
     width: 30%;
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -294,7 +392,7 @@ h4 {
     display: flex;
   }
   header .sub-menu {
-    padding: 1.4em 0em;
+    padding: 2em 1em;
     margin-left: 2em;
     margin-right: 1em;
     -ms-flex-preferred-size: 0;
@@ -359,6 +457,62 @@ h4 {
     width: 31.2%;
     height: 100%;
     margin-bottom: 24px;
+  }
+  .comment .comment--title {
+    font-size: 2em;
+  }
+  .comment .newComment {
+    margin: 32px 124px 0px 124px;
+    padding-bottom: 18px;
+    font-size: large;
+  }
+  .comment .newComment .newComment--sign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 25px;
+  }
+  .comment .newComment .newComment--sign label {
+    margin-bottom: 6px;
+  }
+  .comment .newComment .newComment--sign #inputName,
+  .comment .newComment .newComment--sign #inputComment {
+    width: 440px;
+    font-size: smaller;
+    margin-bottom: 24px;
+  }
+  .comment .newComment .newComment--sign #inputComment {
+    height: 90px;
+  }
+  .comment .newComment .newComment--sign #myButton {
+    width: 160px;
+    margin-left: 285px;
+  }
+  .comment #addComment {
+    margin: 0px 124px !important;
+  }
+  .comment #addComment,
+  .comment #existingComment {
+    margin: 0px 124px 40px 124px;
+    font-size: large;
+  }
+  .comment #addComment .existingBox #nameDate,
+  .comment #existingComment .existingBox #nameDate {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .comment #addComment .existingBox #nameDate #name,
+  .comment #existingComment .existingBox #nameDate #name {
+    font-family: myDemi;
+  }
+  .comment #addComment .existingBox #nameDate #date,
+  .comment #existingComment .existingBox #nameDate #date {
+    margin-left: 10px;
   }
   .footer .myfeet {
     display: -webkit-box;
@@ -451,9 +605,10 @@ h4 {
   }
   h1 {
     margin: 48px 180px;
+    font-size: 40px;
   }
   .hero h1 {
-    font-size: 60px;
+    font-size: 70px;
   }
   .Main {
     display: -webkit-box;
@@ -543,12 +698,32 @@ h4 {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 40px 180px;
+    margin: 40px 180px 0px 180px;
+  }
+  .gallery .gallery--img .gallery--img__bottom {
+    padding-bottom: 16px;
   }
   .gallery img {
     width: 31.8%;
     height: 100%;
     margin: 0px 0px 24px 0px;
+  }
+  .comment .comment--title {
+    margin: 0px 180px;
+    padding-top: 48px;
+    font-size: 40px;
+  }
+  .comment .newComment {
+    margin: 56px 456px 0px 456px;
+    font-size: large;
+  }
+  .comment #addComment {
+    margin: 0px 456px !important;
+  }
+  .comment #addComment,
+  .comment #existingComment {
+    margin: 0px 456px 40px 456px;
+    font-size: large;
   }
   .footer .myfeet {
     display: -webkit-box;
@@ -565,8 +740,8 @@ h4 {
     margin-right: 180px;
   }
   .footer .myfeet .myfeet--title {
-    margin: 8px 60px 8px 0px;
-    font-size: 36.5px;
+    margin: 8px 30px 8px 0px;
+    font-size: 40px;
   }
   .footer .myfeet .myfeet--images {
     padding: 0px;
@@ -576,8 +751,8 @@ h4 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 13%;
-    margin: 8px 0px 8px 0px;
+    width: 15%;
+    margin: 8px 0px;
   }
   .footer .myfeet .myfeet--images img {
     margin-left: 16px;
@@ -595,7 +770,7 @@ h4 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 55%;
+    width: 52%;
     margin: 32px 180px 24px 180px;
   }
   .footer .footer--text .thick {
