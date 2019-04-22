@@ -178,7 +178,11 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  margin: 16px 16px;
+  margin: 16px 16px 0px 16px;
+}
+
+.gallery .gallery--img .gallery--img__bottom {
+  padding-bottom: 24px;
 }
 
 .gallery img {
@@ -451,7 +455,10 @@ h4 {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 36px 24px 8px 24px;
+    margin: 36px 24px 0px 24px;
+  }
+  .gallery .gallery--img .gallery--img__bottom {
+    padding-bottom: 16px;
   }
   .gallery img {
     width: 31.2%;

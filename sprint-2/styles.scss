@@ -113,7 +113,10 @@ h4 {
   .gallery--img {
     display: flex;
     flex-flow: column;
-    margin: 16px 16px;
+    margin: 16px 16px 0px 16px;
+    .gallery--img__bottom {
+      padding-bottom: 24px;
+    }
   }
   img {
     width: 100%;
