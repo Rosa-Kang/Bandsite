@@ -203,7 +203,7 @@ header {
     display: flex;
     margin: 16px;
     justify-content: space-between;
-    width: 33%;
+    width: 37%;
   }
 
   .footer--text {
@@ -280,8 +280,8 @@ header {
 
     #music {
       margin: 64px 24px 0px 24px;
-      width: 59%;
-      height: 21vw;
+      width: 52%;
+      height: 16.5vw;
     }
 
     .smaller {
@@ -291,7 +291,7 @@ header {
     .normal {
       font-size: 7vw;
       width: 70%;
-      margin: 18px 0px 0px 24px;
+      margin: 38px 0px 0px 24px;
     }
   }
 
@@ -323,10 +323,15 @@ header {
       width: 158px;
     }
     .table--zero {
-      width: 100%;
+      width: 78%;
       margin-top: 16px;
       border-spacing: 0px;
       border-collapse: collapse;
+
+      #ghost {
+        display: none;
+        width: 3vw;
+      }
     }
 
     .table--one,
@@ -438,9 +443,9 @@ header {
       width: 40%;
     }
     #music {
-      width: 436px;
-      height: 146px;
-      margin: 123px 0px 0px 70px;
+      width: 34.1vw;
+      height: 11.45vw;
+      margin: 94px 0px 0px 70px;
       border-radius: 4px;
     }
 
@@ -457,13 +462,15 @@ header {
 
     .table {
       display: block;
-      font-size: unset;
-      width: 82.5%;
-      /* margin: 0 auto; */
       margin: 0px 0px 0px 120px;
 
       th {
-        padding: 0px 181px 0px 0px;
+        padding-right: 10vw;
+      }
+
+      #buyTicket {
+        font-size: 1vw;
+        min-width: 160px;
       }
     }
   }

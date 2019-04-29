@@ -226,7 +226,7 @@ header .sub-menu:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 33%;
+  width: 37%;
 }
 
 .footer .footer--text {
@@ -307,8 +307,8 @@ header .sub-menu:hover {
   }
   .showHero #music {
     margin: 64px 24px 0px 24px;
-    width: 59%;
-    height: 21vw;
+    width: 52%;
+    height: 16.5vw;
   }
   .showHero .smaller {
     margin: 96px 0px 0px 24px;
@@ -317,7 +317,7 @@ header .sub-menu:hover {
   .showHero .normal {
     font-size: 7vw;
     width: 70%;
-    margin: 18px 0px 0px 24px;
+    margin: 38px 0px 0px 24px;
   }
   .shows {
     padding: 0px 24px;
@@ -343,10 +343,14 @@ header .sub-menu:hover {
     width: 158px;
   }
   .table .table--zero {
-    width: 100%;
+    width: 78%;
     margin-top: 16px;
     border-spacing: 0px;
     border-collapse: collapse;
+  }
+  .table .table--zero #ghost {
+    display: none;
+    width: 3vw;
   }
   .table .table--one,
   .table .table--two,
@@ -462,9 +466,9 @@ header .sub-menu:hover {
     width: 40%;
   }
   .showHero #music {
-    width: 436px;
-    height: 146px;
-    margin: 123px 0px 0px 70px;
+    width: 34.1vw;
+    height: 11.45vw;
+    margin: 94px 0px 0px 70px;
     border-radius: 4px;
   }
   .showHero .normalMusic {
@@ -485,13 +489,14 @@ header .sub-menu:hover {
   }
   .shows .table {
     display: block;
-    font-size: unset;
-    width: 82.5%;
-    /* margin: 0 auto; */
     margin: 0px 0px 0px 120px;
   }
   .shows .table th {
-    padding: 0px 181px 0px 0px;
+    padding-right: 10vw;
+  }
+  .shows .table #buyTicket {
+    font-size: 1vw;
+    min-width: 160px;
   }
   .footer .footer--myfooter {
     display: -webkit-box;

@@ -3,11 +3,18 @@ let apiURL =
 
 axios.get(apiURL).then(function(response) {
   let feedback = response.data;
+  let after = feedback.sort(
+    (a, b) => parseFloat(b.timestamp) - parseFloat(a.timestamp)
+  );
+  console.log(after);
   let i = 0;
-  feedback = feedback.reverse();
-  console.log(feedback);
-  feedback.forEach(function(review) {
-    let imgSrc = "../Images-2/e1e1e1.png";
+  after.forEach(function(review) {
+    let imgSrc;
+    if (review.timestamp > 1530744338878) {
+      imgSrc = "../Images-2/Mohan-muruge.jpg";
+    } else {
+      imgSrc = "../Images-2/e1e1e1.png";
+    }
     let existingComment = new commentsData(
       convertTime(review.timestamp),
       review.name,
@@ -15,7 +22,6 @@ axios.get(apiURL).then(function(response) {
       imgSrc
     );
     commentsArray.push(existingComment);
-    // let reversed = commentsArray.reverse();
     logComment(commentsArray[i]);
     i++;
   });

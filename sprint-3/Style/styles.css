@@ -162,7 +162,7 @@ h1 {
 }
 
 h4 {
-  font-size: 4vw;
+  font-size: 3.9vw;
   margin: 0px 0px 24px 0px;
 }
 
@@ -270,7 +270,7 @@ h4 {
 
 .comment #addComment,
 .comment #existingComment {
-  font-size: smaller;
+  font-size: 4.345vw;
   margin: 0px 16px 40px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,7 +340,7 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 110px;
+  width: 37%;
 }
 
 .footer .footer--text {
@@ -448,7 +448,7 @@ h4 {
     margin: 24px 12px 40px 12px;
   }
   .phrase .phrase--four h4 {
-    font-size: 1.9vw;
+    font-size: 1.91vw;
     margin: 0px 12px;
   }
   .gallery .gallery--img {
@@ -501,7 +501,7 @@ h4 {
   .comment #addComment,
   .comment #existingComment {
     margin: 0px 124px 40px 124px;
-    font-size: large;
+    font-size: 1.91vw;
   }
   .comment #addComment .existingBox #nameDate,
   .comment #existingComment .existingBox #nameDate {
@@ -649,7 +649,7 @@ h4 {
     margin: 0px 72px 48px 72px;
   }
   .phrase .phrase--four h4 {
-    font-size: 0.95vw;
+    font-size: 0.96vw;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -702,7 +702,7 @@ h4 {
   .comment #existingComment {
     width: 37%;
     margin: 0px 456px 40px 456px;
-    font-size: large;
+    font-size: 0.9827vw;
   }
   .footer .footer--myfooter {
     display: -webkit-box;
